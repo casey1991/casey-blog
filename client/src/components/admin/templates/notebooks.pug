@@ -1,0 +1,6 @@
+div.container-fluid
+    header
+        button.btn.btn-default(type="button" @click="createNotebook") 新建
+    section
+        div.row
+            notebooks-item(v-for="notebook in notebooks" v-bind:notebook="notebook" :key="notebook.id")

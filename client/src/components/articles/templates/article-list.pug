@@ -1,0 +1,5 @@
+div
+    content-list-item(v-for="article in articles" :key="article.id")
+    div.indicator
+        input.btn-pre(type="button" @click="prePage"  v-bind:disabled="!preEnable" value="上一页")
+        input.btn-next(type="button" @click="nextPage" v-bind:disabled ="!nextEnable" value="下一页" )

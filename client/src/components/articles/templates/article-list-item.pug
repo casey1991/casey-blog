@@ -1,0 +1,14 @@
+article.article
+    div.article-head
+        div.article-title
+            a   {{title}}
+        div.article-meta
+            p {{meta}}
+    div.article-media
+        a
+            img.img-responsive
+    div.article-content
+        p {{content}}
+    div.article-permalink
+        router-link.btn.btn-default(to="/article-detail") 阅读全文
+    

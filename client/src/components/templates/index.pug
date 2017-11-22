@@ -1,0 +1,10 @@
+div
+    router-view(name="header")
+    div.container.content
+        div.row
+            div.col-md-8
+                router-view(name="content")
+            div.col-md-4
+                p Aside
+    div.container-fluid
+        h1 Footer

@@ -1,0 +1,18 @@
+nav.navbar.navbar-default
+    div.container-fluid
+        div.navbar-header
+            router-link.navbar-brand(to="/") Brand
+        ul.nav.navbar-nav
+            li.active
+                router-link(to="/") Home
+        ul.nav.navbar-nav.navbar-right
+            li(v-if="user")
+                a(data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") 个人信息
+                    span.caret
+                ul.dropdown-menu
+                    li
+                        a(@click="logout") 退出
+            li(v-else)
+                router-link(to="/signin") 登录
+            li(v-if="user")
+                router-link.btn.btn-default.navbar-btn(to="/admin") 写文章

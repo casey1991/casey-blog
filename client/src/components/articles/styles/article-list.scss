@@ -1,0 +1,11 @@
+.indicator{
+    display: block;
+    text-align:center;
+    .btn-pre,.btn-next{
+        display:inline-block;
+        width:100px;
+        border-radius:8px;
+        height:40px;
+        margin:16px;
+    }
+}

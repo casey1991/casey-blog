@@ -1,0 +1,10 @@
+div.col-md-3
+    form
+        div.thumbnail
+            img(style="height:200px;width:100%;display:block; background-color:gray")
+            div.caption
+                h3 {{notebook.title}}
+                p {{notebook.description}}
+                p
+                    router-link.btn.btn-primary(role="button" v-bind:to="'/admin/notebook-edit/'+notebook.id") 查看
+                    router-link.btn.btn-danger(role="button" v-bind:to="'/admin/notebook-edit/'+notebook.id") 编辑

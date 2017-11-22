@@ -1,0 +1,14 @@
+div.container
+    header
+        a.logo Logo
+        h1 Sign in Casey's BLOG
+    section
+        div.alert.alert-danger(v-if="flushContent") {{flushContent}}
+        form(v-on:submit.prevent="login")
+            div.form-group
+                label.control-label(for="sign-email-address") Email address:
+                input.form-control#email-address(type="text" v-model="email" placeholder="email")
+            div.form-group
+                label.control-label(for="sing-password") Password:
+                input.form-control#sign-password(type="password" v-model="password" placeholder="password")
+            button.btn.btn-default(type="submit") Submit
